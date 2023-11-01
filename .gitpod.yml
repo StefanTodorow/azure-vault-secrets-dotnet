@@ -2,6 +2,8 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
+  - name: az
+    init: curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
   - name: Restore & Build
     init: |
       dotnet dev-certs https 
